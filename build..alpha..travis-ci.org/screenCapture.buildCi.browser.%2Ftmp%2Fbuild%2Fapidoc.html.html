@@ -1,0 +1,796 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/bnoordhuis/node-buffertools">buffertools (v2.1.6)</a>
+</h1>
+<h4>Working with node.js buffers made easy.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.buffertools">module buffertools</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.WritableBufferStream">
+            function <span class="apidocSignatureSpan">buffertools.</span>WritableBufferStream
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.clear">
+            function <span class="apidocSignatureSpan">buffertools.</span>clear
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.compare">
+            function <span class="apidocSignatureSpan">buffertools.</span>compare
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.concat">
+            function <span class="apidocSignatureSpan">buffertools.</span>concat
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.equals">
+            function <span class="apidocSignatureSpan">buffertools.</span>equals
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.extend">
+            function <span class="apidocSignatureSpan">buffertools.</span>extend
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.fill">
+            function <span class="apidocSignatureSpan">buffertools.</span>fill
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.fromHex">
+            function <span class="apidocSignatureSpan">buffertools.</span>fromHex
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.indexOf">
+            function <span class="apidocSignatureSpan">buffertools.</span>indexOf
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.reverse">
+            function <span class="apidocSignatureSpan">buffertools.</span>reverse
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.toHex">
+            function <span class="apidocSignatureSpan">buffertools.</span>toHex
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">buffertools.</span>WritableBufferStream.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.buffertools.WritableBufferStream">module buffertools.WritableBufferStream</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.WritableBufferStream.WritableBufferStream">
+            function <span class="apidocSignatureSpan">buffertools.</span>WritableBufferStream
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.WritableBufferStream.super_">
+            function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.buffertools.WritableBufferStream.prototype">module buffertools.WritableBufferStream.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.WritableBufferStream.prototype._append">
+            function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>_append
+            <span class="apidocSignatureSpan">(buffer, encoding)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.WritableBufferStream.prototype.end">
+            function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>end
+            <span class="apidocSignatureSpan">(buffer, encoding)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.WritableBufferStream.prototype.getBuffer">
+            function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>getBuffer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.WritableBufferStream.prototype.toString">
+            function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.buffertools.WritableBufferStream.prototype.write">
+            function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>write
+            <span class="apidocSignatureSpan">(buffer, encoding)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.buffertools" id="apidoc.module.buffertools">module buffertools</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.WritableBufferStream" id="apidoc.element.buffertools.WritableBufferStream">
+        function <span class="apidocSignatureSpan">buffertools.</span>WritableBufferStream
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function WritableBufferStream() {
+	this.writable = true;
+	this.buffer = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.clear" id="apidoc.element.buffertools.clear">
+        function <span class="apidocSignatureSpan">buffertools.</span>clear
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clear() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	node-gyp configure
+	node-gyp build
+
+Now you can include the module in your project.
+
+	require('buffertools').extend();  // extend Buffer.prototype
+	var buf = new Buffer(42);         // create a 42 byte buffer
+	buf.<span class="apidocCodeKeywordSpan">clear</span>();                      // clear it!
+
+If you don't want to extend the Buffer class's prototype (recommended):
+
+	var buffertools = require('buffertools');
+	var buf = new Buffer(42);
+	buffertools.clear(buf);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.compare" id="apidoc.element.buffertools.compare">
+        function <span class="apidocSignatureSpan">buffertools.</span>compare
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compare() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Buffer#clear()
+### buffertools.clear(buffer)
+
+Clear the buffer. This is equivalent to `Buffer#fill(0)`.
+Returns the buffer object so you can chain method calls.
+
+### Buffer#compare(buffer|string)
+### buffertools.<span class="apidocCodeKeywordSpan">compare</span>(buffer, buffer|string)
+
+Lexicographically compare two buffers. Returns a number less than zero
+if a &lt; b, zero if a == b or greater than zero if a &gt; b.
+
+Buffers are considered equal when they are of the same length and contain
+the same binary data.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.concat" id="apidoc.element.buffertools.concat">
+        function <span class="apidocSignatureSpan">buffertools.</span>concat
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function concat() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Buffers are considered equal when they are of the same length and contain
+the same binary data.
+
+Smaller buffers are considered to be less than larger ones. Some buffers
+find this hurtful.
+
+### Buffer#concat(a, b, c, ...)
+### buffertools.<span class="apidocCodeKeywordSpan">concat</span>(a, b, c, ...)
+
+Concatenate two or more buffers/strings and return the result. Example:
+
+	// identical to new Buffer('foobarbaz')
+	a = new Buffer('foo');
+	b = new Buffer('bar');
+	c = a.concat(b, 'baz');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.equals" id="apidoc.element.buffertools.equals">
+        function <span class="apidocSignatureSpan">buffertools.</span>equals
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function equals() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	c = a.concat(b, 'baz');
+	console.log(a, b, c); // "foo bar foobarbaz"
+
+	// static variant
+	buffertools.concat('foo', new Buffer('bar'), 'baz');
+
+### Buffer#equals(buffer|string)
+### buffertools.<span class="apidocCodeKeywordSpan">equals</span>(buffer, buffer|string)
+
+Returns true if this buffer equals the argument, false otherwise.
+
+Buffers are considered equal when they are of the same length and contain
+the same binary data.
+
+Caveat emptor: If your buffers contain strings with different character encodings,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.extend" id="apidoc.element.buffertools.extend">
+        function <span class="apidocSignatureSpan">buffertools.</span>extend
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extend = function () {
+	var receivers;
+	if (arguments.length &gt; 0) {
+		receivers = Array.prototype.slice.call(arguments);
+	} else if (typeof SlowBuffer === 'function') {
+		receivers = [Buffer.prototype, SlowBuffer.prototype];
+	} else {
+		receivers = [Buffer.prototype];
+	}
+	for (var i = 0, n = receivers.length; i &lt; n; i += 1) {
+		var receiver = receivers[i];
+		for (var key in buffertools) {
+			receiver[key] = buffertools[key];
+		}
+		if (receiver !== exports) {
+			receiver.concat = function() {
+				var args = [this].concat(Array.prototype.slice.call(arguments));
+				return buffertools.concat.apply(buffertools, args);
+			};
+		}
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+From source:
+
+	node-gyp configure
+	node-gyp build
+
+Now you can include the module in your project.
+
+	require('buffertools').<span class="apidocCodeKeywordSpan">extend</span>();  // extend Buffer.prototype
+	var buf = new Buffer(42);         // create a 42 byte buffer
+	buf.clear();                      // clear it!
+
+If you don't want to extend the Buffer class's prototype (recommended):
+
+	var buffertools = require('buffertools');
+	var buf = new Buffer(42);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.fill" id="apidoc.element.buffertools.fill">
+        function <span class="apidocSignatureSpan">buffertools.</span>fill
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fill() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Buffers are considered equal when they are of the same length and contain
+the same binary data.
+
+Caveat emptor: If your buffers contain strings with different character encodings,
+they will most likely *not* be equal.
+
+### Buffer#fill(integer|string|buffer)
+### buffertools.<span class="apidocCodeKeywordSpan">fill</span>(buffer, integer|string|buffer)
+
+Fill the buffer (repeatedly if necessary) with the argument.
+Returns the buffer object so you can chain method calls.
+
+### Buffer#fromHex()
+### buffertools.fromHex(buffer)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.fromHex" id="apidoc.element.buffertools.fromHex">
+        function <span class="apidocSignatureSpan">buffertools.</span>fromHex
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromHex() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Buffer#fill(integer|string|buffer)
+### buffertools.fill(buffer, integer|string|buffer)
+
+Fill the buffer (repeatedly if necessary) with the argument.
+Returns the buffer object so you can chain method calls.
+
+### Buffer#fromHex()
+### buffertools.<span class="apidocCodeKeywordSpan">fromHex</span>(buffer)
+
+Assumes this buffer contains hexadecimal data (packed, no whitespace)
+and decodes it into binary data. Returns a new buffer with the decoded
+content. Throws an exception if non-hexadecimal data is encountered.
+
+### Buffer#indexOf(buffer|string, [start=0])
+### buffertools.indexOf(buffer, buffer|string, [start=0])
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.indexOf" id="apidoc.element.buffertools.indexOf">
+        function <span class="apidocSignatureSpan">buffertools.</span>indexOf
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function indexOf() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### buffertools.fromHex(buffer)
+
+Assumes this buffer contains hexadecimal data (packed, no whitespace)
+and decodes it into binary data. Returns a new buffer with the decoded
+content. Throws an exception if non-hexadecimal data is encountered.
+
+### Buffer#indexOf(buffer|string, [start=0])
+### buffertools.<span class="apidocCodeKeywordSpan">indexOf</span>(buffer, buffer|string, [start=0])
+
+Search this buffer for the first occurrence of the argument, starting at
+offset `start`. Returns the zero-based index or -1 if there is no match.
+
+### Buffer#reverse()
+### buffertools.reverse(buffer)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.reverse" id="apidoc.element.buffertools.reverse">
+        function <span class="apidocSignatureSpan">buffertools.</span>reverse
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function reverse() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Buffer#indexOf(buffer|string, [start=0])
+### buffertools.indexOf(buffer, buffer|string, [start=0])
+
+Search this buffer for the first occurrence of the argument, starting at
+offset `start`. Returns the zero-based index or -1 if there is no match.
+
+### Buffer#reverse()
+### buffertools.<span class="apidocCodeKeywordSpan">reverse</span>(buffer)
+
+Reverse the content of the buffer in place. Example:
+
+	b = new Buffer('live');
+	b.reverse();
+	console.log(b); // "evil"
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.toHex" id="apidoc.element.buffertools.toHex">
+        function <span class="apidocSignatureSpan">buffertools.</span>toHex
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toHex() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Reverse the content of the buffer in place. Example:
+
+	b = new Buffer('live');
+	b.reverse();
+	console.log(b); // "evil"
+
+### Buffer#toHex()
+### buffertools.<span class="apidocCodeKeywordSpan">toHex</span>(buffer)
+
+Returns the contents of this buffer encoded as a hexadecimal string.
+
+## Classes
+
+Singular, actually. To wit:
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.buffertools.WritableBufferStream" id="apidoc.module.buffertools.WritableBufferStream">module buffertools.WritableBufferStream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.WritableBufferStream.WritableBufferStream" id="apidoc.element.buffertools.WritableBufferStream.WritableBufferStream">
+        function <span class="apidocSignatureSpan">buffertools.</span>WritableBufferStream
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function WritableBufferStream() {
+	this.writable = true;
+	this.buffer = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.WritableBufferStream.super_" id="apidoc.element.buffertools.WritableBufferStream.super_">
+        function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.buffertools.WritableBufferStream.prototype" id="apidoc.module.buffertools.WritableBufferStream.prototype">module buffertools.WritableBufferStream.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.WritableBufferStream.prototype._append" id="apidoc.element.buffertools.WritableBufferStream.prototype._append">
+        function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>_append
+        <span class="apidocSignatureSpan">(buffer, encoding)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_append = function (buffer, encoding) {
+	if (!this.writable) {
+		throw new Error('Stream is not writable.');
+	}
+
+	if (Buffer.isBuffer(buffer)) {
+		// no action required
+	}
+	else if (typeof buffer == 'string') {
+		// TODO optimize
+		buffer = new Buffer(buffer, encoding || 'utf8');
+	}
+	else {
+		throw new Error('Argument should be either a buffer or a string.');
+	}
+
+	// FIXME optimize!
+	if (this.buffer) {
+		this.buffer = buffertools.concat(this.buffer, buffer);
+	}
+	else {
+		this.buffer = new Buffer(buffer.length);
+		buffer.copy(this.buffer);
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	else {
+		this.buffer = new Buffer(buffer.length);
+		buffer.copy(this.buffer);
+	}
+};
+
+WritableBufferStream.prototype.write = function(buffer, encoding) {
+	this.<span class="apidocCodeKeywordSpan">_append</span>(buffer, encoding);
+
+	// signal that it's safe to immediately write again
+	return true;
+};
+
+WritableBufferStream.prototype.end = function(buffer, encoding) {
+	if (buffer) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.WritableBufferStream.prototype.end" id="apidoc.element.buffertools.WritableBufferStream.prototype.end">
+        function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>end
+        <span class="apidocSignatureSpan">(buffer, encoding)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">end = function (buffer, encoding) {
+	if (buffer) {
+		this._append(buffer, encoding);
+	}
+
+	this.emit('close');
+
+	this.writable = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var closed = false;
+var stream = new WritableBufferStream();
+
+stream.on('close', function() { closed = true; });
+stream.write('Hello,');
+stream.write(' ');
+stream.write('world!');
+stream.<span class="apidocCodeKeywordSpan">end</span>();
+
+assert.equal(true, closed);
+assert.equal(false, stream.writable);
+assert.equal('Hello, world!', stream.toString());
+assert.equal('Hello, world!', stream.getBuffer().toString());
+
+// closed stream should throw
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.WritableBufferStream.prototype.getBuffer" id="apidoc.element.buffertools.WritableBufferStream.prototype.getBuffer">
+        function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>getBuffer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getBuffer = function () {
+	if (this.buffer) {
+		return this.buffer;
+	}
+	return new Buffer(0);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Example usage:
+
+	// slurp stdin into a buffer
+	process.stdin.resume();
+	ostream = new WritableBufferStream();
+	util.pump(process.stdin, ostream);
+	console.log(ostream.<span class="apidocCodeKeywordSpan">getBuffer</span>());
+
+The stream never emits 'error' or 'drain' events.
+
+### WritableBufferStream.getBuffer()
+
+Return the data accumulated so far as a buffer.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.WritableBufferStream.prototype.toString" id="apidoc.element.buffertools.WritableBufferStream.prototype.toString">
+        function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+	return this.getBuffer().toString();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	if (this.buffer) {
+		return this.buffer;
+	}
+	return new Buffer(0);
+};
+
+WritableBufferStream.prototype.toString = function() {
+	return this.getBuffer().<span class="apidocCodeKeywordSpan">toString</span>();
+};
+
+exports.WritableBufferStream = WritableBufferStream;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.buffertools.WritableBufferStream.prototype.write" id="apidoc.element.buffertools.WritableBufferStream.prototype.write">
+        function <span class="apidocSignatureSpan">buffertools.WritableBufferStream.prototype.</span>write
+        <span class="apidocSignatureSpan">(buffer, encoding)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">write = function (buffer, encoding) {
+	this._append(buffer, encoding);
+
+	// signal that it's safe to immediately write again
+	return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+assert.equal(0, endOfHeader.indexOf('\r\n\r\n'));
+
+// feature request, see https://github.com/bnoordhuis/node-buffertools/issues#issue/8
+var closed = false;
+var stream = new WritableBufferStream();
+
+stream.on('close', function() { closed = true; });
+stream.<span class="apidocCodeKeywordSpan">write</span>('Hello,');
+stream.write(' ');
+stream.write('world!');
+stream.end();
+
+assert.equal(true, closed);
+assert.equal(false, stream.writable);
+assert.equal('Hello, world!', stream.toString());
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
